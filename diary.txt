@@ -7,3 +7,5 @@ first story:
 * first test: create an empty dictionary
 * first test passses, an object is created
 * 2nd test: create a dictionary with 1 words
+* 3rd test: check that the word is correctly stored in dictionary
+* 3rd test: problems with the global variables in python, had to add "global" keyword and new initialization to the constructor
