@@ -9,3 +9,5 @@ first story:
 * 2nd test: create a dictionary with 1 words
 * 3rd test: check that the word is correctly stored in dictionary
 * 3rd test: problems with the global variables in python, had to add "global" keyword and new initialization to the constructor
+* small test refactoring, moved constructor call to SetUp method; named all dict instances global
+* 4th test: can retrieve the size of the dictionary correctly if dictionary created with one word

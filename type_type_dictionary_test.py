@@ -3,22 +3,25 @@ import unittest
  
 class TypeTypeDictionaryTest(unittest.TestCase):
 	ONE_WORD = "one"
+	dict = None;
 
 	def setUp(self):
 		#do nothing for now
+		self.dict = TypeTypeDictionary( self.ONE_WORD );
 		return
 	
 	def testICanCreateAnEmptyDictionaryTest(self):
-		dict = TypeTypeDictionary();
-		self.assertNotEqual(dict, None);
+		self.dict = TypeTypeDictionary();
+		self.assertNotEqual(self.dict, None);
 	
 	def testICanCreateADictionaryWithOneWord(self):
-		dict = TypeTypeDictionary( self.ONE_WORD );
-		self.assertNotEqual(dict, None);
+		self.assertNotEqual(self.dict, None);
 	
 	def testICanCreateADictionaryWithOneWordAndWordIsRetrievedCorrectly(self):
-		dict = TypeTypeDictionary( self.ONE_WORD );
-		self.assertEqual(dict.first(), self.ONE_WORD );
+		self.assertEqual(self.dict.first(), self.ONE_WORD );
+	
+	def testCanGetDictionarySizeCorrectlyWhenCreatingDictionaryWithOneWord(self):
+		self.assertEqual(self.dict.size(), 1 );
 	
 	def tearDown(self):
 		#do nothing for now

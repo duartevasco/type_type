@@ -9,3 +9,6 @@ class TypeTypeDictionary():
 		
 	def first (self):
 		return dict[0];
+		
+	def size (self):
+		return 1;
