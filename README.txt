@@ -1,0 +1,1 @@
+A set of classes to help my kid learn how to type on the keyboard by copying words that the computer will generate.
