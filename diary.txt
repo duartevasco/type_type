@@ -1,3 +1,9 @@
 MVP: 
 - a program that prints out words; checks input and gives visual feedback if the word typed is the same as the word printed on screen
 
+first story:
+- I want a dictionary to print out words from in random order
+* created a dictionary class
+* first test: create an empty dictionary
+* first test passses, an object is created
+* 2nd test: create a dictionary with 1 words
