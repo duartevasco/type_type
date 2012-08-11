@@ -11,3 +11,5 @@ first story:
 * 3rd test: problems with the global variables in python, had to add "global" keyword and new initialization to the constructor
 * small test refactoring, moved constructor call to SetUp method; named all dict instances global
 * 4th test: can retrieve the size of the dictionary correctly if dictionary created with one word
+* 5th test: can retrieve the size of the dictionary correctly if dictionary created with two words
+* the first() call was failing because when initializing the class with only the word, the language transforms each letter of the word into an element of a list, which caused the size() and first() methods to fail. Fixed by initializing with one word with []'s
