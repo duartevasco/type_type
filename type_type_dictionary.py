@@ -1,6 +1,8 @@
 class TypeTypeDictionary():
 	dict = [];
 	next_item = 0;
+	WORD_TEXT = 0;
+	WORD_SOUND = 1;
 		
 	def __init__(self, words=[]):
 		self.dict = words;

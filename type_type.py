@@ -8,14 +8,16 @@ class TypeType():
 		return
 	
 	def start(self):
-		dict = TypeTypeDictionary( ["Rio", "Flor", "Lumi"] )
+		dict = TypeTypeDictionary( [["Rio", "rio.wav"], ["Flor","flor.wav"], ["Lumi", "lumi.wav"], ["Nilza", "nilza.wav"]] )
 		word = dict.next()
 		while 1==1:
-			print "Palavra: ",  word
+			print "Palavra: ",  word[dict.WORD_TEXT]
+			winsound.PlaySound( "escreve.wav", winsound.SND_FILENAME )
+			winsound.PlaySound( word[dict.WORD_SOUND], winsound.SND_FILENAME )
 			var = raw_input("\nEscreve a palavra: ")
 			print "\ntu escreveste: ", var
-			print " eu escrevi: ", word
-			if var == word:
+			print " eu escrevi: ", word[dict.WORD_TEXT]
+			if var == word[dict.WORD_TEXT ]:
 				print "\n============="
 				print "\n ESTA CERTO"
 				print "\n=============\n\n"
