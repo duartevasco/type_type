@@ -13,3 +13,7 @@ first story:
 * 4th test: can retrieve the size of the dictionary correctly if dictionary created with one word
 * 5th test: can retrieve the size of the dictionary correctly if dictionary created with two words
 * the first() call was failing because when initializing the class with only the word, the language transforms each letter of the word into an element of a list, which caused the size() and first() methods to fail. Fixed by initializing with one word with []'s
+* 6TH test: was a bit lost. decided to implement "next()" for the dictionary. Planning to use use that as the iteration method...
+* Refactor: remove "first()", will use "next()" only
+* Refatoring: tests and class to accomodate sets of 2 items a word in text and the WAV file to play when playing that word
+* 7th test: checked that I can get both the word and the text version of the word
